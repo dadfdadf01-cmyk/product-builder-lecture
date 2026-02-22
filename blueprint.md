@@ -2,38 +2,41 @@
 
 ## Overview
 
-This is a simple lottery number recommendation web application. It allows users to generate a set of random lottery numbers.
+이 프로젝트는 간단한 로또 번호 생성 웹 애플리케이션입니다. 사용자가 1부터 45 사이의 무작위 로또 번호 세트를 생성할 수 있도록 도와줍니다.
 
 ## Style, Design, and Features
 
 *   **UI:**
-    *   A main container with a title.
-    *   A button to generate lottery numbers.
-    *   A section to display the generated numbers.
-    *   **Theme Toggle:** A button to switch between Light Mode and Dark Mode.
+    *   제목이 있는 메인 컨테이너.
+    *   로또 번호 생성 버튼.
+    *   생성된 번호를 표시하는 섹션.
+    *   **테마 전환:** 라이트 모드와 다크 모드를 전환하는 버튼.
 *   **Styling:**
-    *   Modern and clean design.
-    *   Responsive layout for mobile and web.
-    *   Use of CSS variables for theming (Light/Dark).
-    *   Interactive animations for number generation.
+    *   현대적이고 깔끔한 디자인.
+    *   모바일 및 웹에 최적화된 반응형 레이아웃.
+    *   테마 지정을 위한 CSS 변수 사용 (라이트/다크).
+    *   번호 생성 시 대화형 애니메이션.
 *   **Functionality:**
-    *   Clicking the "Generate" button will produce 6 unique random numbers between 1 and 45.
-    *   Numbers are sorted in ascending order.
-    *   Persistence: Theme preference is saved in `localStorage`.
-    *   **Formspree Integration:** A functional contact/affiliate form for user inquiries.
+    *   "번호 생성하기" 버튼을 클릭하면 1~45 사이의 고유한 숫자 6개가 생성됩니다.
+    *   숫자는 오름차순으로 정렬됩니다.
+    *   지속성: 테마 설정이 `localStorage`에 저장됩니다.
+    *   **Formspree 통합:** 사용자 문의를 위한 기능적인 제휴/문의 폼.
 
 ## Task Progress
 
-*   **Task 1: Create Lottery Number Recommendation Page (Completed)**
-    *   HTML structure created.
-    *   Basic styling added.
-    *   Logic to generate 6 random numbers implemented.
-*   **Task 2: Implement Dark/Light Mode (Completed)**
-    *   CSS variables added for both themes.
-    *   Toggle button and logic added to `index.html` and `main.js`.
-    *   Persistence implemented via `localStorage`.
-    *   Added animations and sorting for better UX.
-*   **Task 3: Implement Affiliate Contact Form (Completed)**
-    *   Integrated Formspree for handling form submissions.
-    *   Added styling for form inputs to match theme.
-    *   Form fields: Name, Email, Message.
+*   **Task 1: 로또 번호 추천 페이지 생성 (완료)**
+    *   HTML 구조 생성.
+    *   기본 스타일 추가.
+    *   6개의 무작위 숫자 생성 로직 구현.
+*   **Task 2: 다크/라이트 모드 구현 (완료)**
+    *   두 테마를 위한 CSS 변수 추가.
+    *   `index.html` 및 `main.js`에 토글 버튼 및 로직 추가.
+    *   `localStorage`를 통한 설정 저장 구현.
+    *   더 나은 UX를 위한 애니메이션 및 정렬 추가.
+*   **Task 3: 제휴 문의 폼 구현 (완료)**
+    *   양식 제출 처리를 위해 Formspree 통합.
+    *   테마에 맞게 양식 입력 스타일 추가.
+    *   양식 필드: 이름, 이메일, 메시지.
+*   **Task 4: 한국어 현지화 (완료)**
+    *   전체 UI 텍스트(제목, 버튼, 폼 등)를 한국어로 번역.
+    *   HTML 언어 설정을 `ko`로 변경.

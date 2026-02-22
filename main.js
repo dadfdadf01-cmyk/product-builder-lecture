@@ -7,14 +7,14 @@ const body = document.body;
 const currentTheme = localStorage.getItem('theme') || 'light';
 if (currentTheme === 'dark') {
     body.classList.add('dark-theme');
-    themeToggle.textContent = '☀️ Light Mode';
+    themeToggle.textContent = '☀️ 라이트 모드';
 }
 
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-theme');
     const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
     localStorage.setItem('theme', theme);
-    themeToggle.textContent = theme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+    themeToggle.textContent = theme === 'dark' ? '☀️ 라이트 모드' : '🌙 다크 모드';
 });
 
 // Generate Numbers Logic
