@@ -10,17 +10,25 @@ This is a simple lottery number recommendation web application. It allows users 
     *   A main container with a title.
     *   A button to generate lottery numbers.
     *   A section to display the generated numbers.
+    *   **Theme Toggle:** A button to switch between Light Mode and Dark Mode.
 *   **Styling:**
     *   Modern and clean design.
     *   Responsive layout for mobile and web.
-    *   Use of CSS variables for theming.
+    *   Use of CSS variables for theming (Light/Dark).
+    *   Interactive animations for number generation.
 *   **Functionality:**
     *   Clicking the "Generate" button will produce 6 unique random numbers between 1 and 45.
+    *   Numbers are sorted in ascending order.
+    *   Persistence: Theme preference is saved in `localStorage`.
 
-## Current Task: Create Lottery Number Recommendation Page
+## Task Progress
 
-*   **Plan:**
-    1.  **Create `blueprint.md`:** Document the application's design and features.
-    2.  **Update `index.html`:** Create the basic HTML structure for the lottery page.
-    3.  **Update `style.css`:** Add styling to make the page visually appealing.
-    4.  **Update `main.js`:** Implement the JavaScript logic to generate random lottery numbers.
+*   **Task 1: Create Lottery Number Recommendation Page (Completed)**
+    *   HTML structure created.
+    *   Basic styling added.
+    *   Logic to generate 6 random numbers implemented.
+*   **Task 2: Implement Dark/Light Mode (Completed)**
+    *   CSS variables added for both themes.
+    *   Toggle button and logic added to `index.html` and `main.js`.
+    *   Persistence implemented via `localStorage`.
+    *   Added animations and sorting for better UX.

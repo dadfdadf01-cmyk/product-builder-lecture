@@ -1,46 +1,109 @@
+:root {
+    --bg-color: #f0f0f0;
+    --container-bg: #ffffff;
+    --text-color: #333333;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    --number-bg: #eeeeee;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme {
+    --bg-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --button-bg: #3700b3;
+    --button-text: #ffffff;
+    --number-bg: #333333;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
     text-align: center;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--container-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    max-width: 400px;
+    width: 90%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+#theme-toggle {
+    background: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 0;
 }
 
 button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
     cursor: pointer;
     border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    margin-top: 1rem;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s, transform 0.1s;
+    width: 100%;
+}
+
+button:active {
+    transform: scale(0.98);
 }
 
 .numbers-container {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+    min-height: 50px;
 }
 
 .number {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    background-color: #eee;
+    background-color: var(--number-bg);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
