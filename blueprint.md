@@ -20,6 +20,7 @@ This is a simple lottery number recommendation web application. It allows users 
     *   Clicking the "Generate" button will produce 6 unique random numbers between 1 and 45.
     *   Numbers are sorted in ascending order.
     *   Persistence: Theme preference is saved in `localStorage`.
+    *   **Formspree Integration:** A functional contact/affiliate form for user inquiries.
 
 ## Task Progress
 
@@ -32,3 +33,7 @@ This is a simple lottery number recommendation web application. It allows users 
     *   Toggle button and logic added to `index.html` and `main.js`.
     *   Persistence implemented via `localStorage`.
     *   Added animations and sorting for better UX.
+*   **Task 3: Implement Affiliate Contact Form (Completed)**
+    *   Integrated Formspree for handling form submissions.
+    *   Added styling for form inputs to match theme.
+    *   Form fields: Name, Email, Message.
